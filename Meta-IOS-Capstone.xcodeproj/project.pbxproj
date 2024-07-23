@@ -10,6 +10,7 @@
 		1212CB992C4FFB6E007A212E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1212CB982C4FFB6E007A212E /* OnboardingView.swift */; };
 		1212CB9B2C5014CB007A212E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1212CB9A2C5014CB007A212E /* HomeView.swift */; };
 		1212CB9D2C501567007A212E /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1212CB9C2C501567007A212E /* MenuView.swift */; };
+		1212CB9F2C5018AE007A212E /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1212CB9E2C5018AE007A212E /* UserView.swift */; };
 		1242B9F32C4FB8BC00E14685 /* Meta_IOS_CapstoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1242B9F22C4FB8BC00E14685 /* Meta_IOS_CapstoneApp.swift */; };
 		1242B9F52C4FB8BC00E14685 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1242B9F42C4FB8BC00E14685 /* ContentView.swift */; };
 		1242B9F72C4FB8BE00E14685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1242B9F62C4FB8BE00E14685 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		1212CB982C4FFB6E007A212E /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		1212CB9A2C5014CB007A212E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1212CB9C2C501567007A212E /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		1212CB9E2C5018AE007A212E /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		1242B9EF2C4FB8BC00E14685 /* Meta-IOS-Capstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meta-IOS-Capstone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1242B9F22C4FB8BC00E14685 /* Meta_IOS_CapstoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta_IOS_CapstoneApp.swift; sourceTree = "<group>"; };
 		1242B9F42C4FB8BC00E14685 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				1212CB982C4FFB6E007A212E /* OnboardingView.swift */,
 				1212CB9A2C5014CB007A212E /* HomeView.swift */,
 				1212CB9C2C501567007A212E /* MenuView.swift */,
+				1212CB9E2C5018AE007A212E /* UserView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				1212CB9D2C501567007A212E /* MenuView.swift in Sources */,
 				1242B9FC2C4FB8BE00E14685 /* Persistence.swift in Sources */,
 				1242B9F52C4FB8BC00E14685 /* ContentView.swift in Sources */,
+				1212CB9F2C5018AE007A212E /* UserView.swift in Sources */,
 				1242B9F32C4FB8BC00E14685 /* Meta_IOS_CapstoneApp.swift in Sources */,
 				1212CB9B2C5014CB007A212E /* HomeView.swift in Sources */,
 				1212CB992C4FFB6E007A212E /* OnboardingView.swift in Sources */,

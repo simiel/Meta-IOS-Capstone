@@ -21,9 +21,9 @@ struct OnboardingView: View {
         NavigationView{
             VStack{
                 
-                NavigationLink(destination: HomeView(), isActive: $isOnboardingComplete) {
-                    Text("jfjfj")
-                }
+//                NavigationLink(destination: HomeView(), isActive: $isOnboardingComplete) {
+//                    Text("jfjfj")
+//                }
                 
                 Text("Welcome to Little Lemon!")
                     .font(.largeTitle)

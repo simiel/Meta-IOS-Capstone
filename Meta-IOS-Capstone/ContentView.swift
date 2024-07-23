@@ -20,7 +20,7 @@ struct ContentView: View {
     var body: some View {
         Group {
                     if isOnboardingComplete {
-                        HomeView()
+                        HomeView(isOnboardingComplete: $isOnboardingComplete)
                     } else {
                         OnboardingView(isOnboardingComplete: $isOnboardingComplete)
                     }
