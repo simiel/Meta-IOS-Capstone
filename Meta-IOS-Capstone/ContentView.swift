@@ -20,7 +20,7 @@ struct ContentView: View {
     var body: some View {
         Group {
                     if isOnboardingComplete {
-                        MainView()
+                        HomeView()
                     } else {
                         OnboardingView(isOnboardingComplete: $isOnboardingComplete)
                     }
@@ -39,13 +39,6 @@ struct ContentView: View {
     }
     
     
-}
-
-struct MainView: View {
-    var body: some View {
-        Text("Main Content")
-            .font(.largeTitle)
-    }
 }
 
 #Preview {

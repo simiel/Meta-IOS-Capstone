@@ -18,44 +18,51 @@ struct OnboardingView: View {
     @Binding var isOnboardingComplete: Bool
     
     var body: some View {
-        VStack{
-            Text("Welcome to Little Lemon!")
-                .font(.largeTitle)
-                .padding()
-            
-            TextField("Enter your first name", text: $firstName )
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-            
-            TextField("Enter your last name", text: $lastName )
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-            
-            TextField("Enter your email address", text: $email )
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-                .keyboardType(.emailAddress)
-                .autocapitalization(.none)
-            
-            Button(action: {
-                if !firstName.isEmpty && !lastName.isEmpty && !email.isEmpty {
-                                    saveUserData()
-                                    isOnboardingComplete = true
-                                } else {
-                                    print("All fields must be filled out.")
-                                }
-            }){
-                Text("Login")
-                    .font(.headline)
+        NavigationView{
+            VStack{
+                
+                NavigationLink(destination: HomeView(), isActive: $isOnboardingComplete) {
+                    Text("jfjfj")
+                }
+                
+                Text("Welcome to Little Lemon!")
+                    .font(.largeTitle)
                     .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+                
+                TextField("Enter your first name", text: $firstName )
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                
+                TextField("Enter your last name", text: $lastName )
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                
+                TextField("Enter your email address", text: $email )
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                    .keyboardType(.emailAddress)
+                    .autocapitalization(.none)
+                
+                Button(action: {
+                    if !firstName.isEmpty && !lastName.isEmpty && !email.isEmpty {
+                        saveUserData()
+                        isOnboardingComplete = true
+                    } else {
+                        print("All fields must be filled out.")
+                    }
+                }){
+                    Text("Login")
+                        .font(.headline)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                .padding()
             }
             .padding()
+            
         }
-        .padding()
-        
     }
     
     func saveUserData(){
