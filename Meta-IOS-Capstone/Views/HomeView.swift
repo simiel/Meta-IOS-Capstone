@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @Binding var isOnboardingComplete: Bool
+    let persistenceController = PersistenceController.shared
     
     var body: some View {
         TabView {
@@ -16,6 +17,7 @@ struct HomeView: View {
                 .tabItem {
                     Label("Menu", systemImage: "list.dash")
                 }
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
             
             UserView(isOnboardingComplete: $isOnboardingComplete)
                 .tabItem {

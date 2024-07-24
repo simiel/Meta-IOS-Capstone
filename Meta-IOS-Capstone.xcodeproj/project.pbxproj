@@ -12,6 +12,10 @@
 		1212CB9D2C501567007A212E /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1212CB9C2C501567007A212E /* MenuView.swift */; };
 		1212CB9F2C5018AE007A212E /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1212CB9E2C5018AE007A212E /* UserView.swift */; };
 		1212CBA22C501F8D007A212E /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1212CBA12C501F8D007A212E /* Menu.swift */; };
+		1212CBD12C50F3EF007A212E /* Dish+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1212CBCF2C50F3EF007A212E /* Dish+CoreDataClass.swift */; };
+		1212CBD22C50F3EF007A212E /* Dish+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1212CBD02C50F3EF007A212E /* Dish+CoreDataProperties.swift */; };
+		1212CBD42C50F60F007A212E /* FetchedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1212CBD32C50F60F007A212E /* FetchedObjects.swift */; };
+		1212CBD72C50FD7C007A212E /* DishDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1212CBD62C50FD7C007A212E /* DishDetailView.swift */; };
 		1242B9F32C4FB8BC00E14685 /* Meta_IOS_CapstoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1242B9F22C4FB8BC00E14685 /* Meta_IOS_CapstoneApp.swift */; };
 		1242B9F52C4FB8BC00E14685 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1242B9F42C4FB8BC00E14685 /* ContentView.swift */; };
 		1242B9F72C4FB8BE00E14685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1242B9F62C4FB8BE00E14685 /* Assets.xcassets */; };
@@ -46,6 +50,10 @@
 		1212CB9C2C501567007A212E /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		1212CB9E2C5018AE007A212E /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		1212CBA12C501F8D007A212E /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		1212CBCF2C50F3EF007A212E /* Dish+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dish+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		1212CBD02C50F3EF007A212E /* Dish+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dish+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		1212CBD32C50F60F007A212E /* FetchedObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedObjects.swift; sourceTree = "<group>"; };
+		1212CBD62C50FD7C007A212E /* DishDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailView.swift; sourceTree = "<group>"; };
 		1242B9EF2C4FB8BC00E14685 /* Meta-IOS-Capstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meta-IOS-Capstone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1242B9F22C4FB8BC00E14685 /* Meta_IOS_CapstoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta_IOS_CapstoneApp.swift; sourceTree = "<group>"; };
 		1242B9F42C4FB8BC00E14685 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +100,7 @@
 				1212CB9A2C5014CB007A212E /* HomeView.swift */,
 				1212CB9C2C501567007A212E /* MenuView.swift */,
 				1212CB9E2C5018AE007A212E /* UserView.swift */,
+				1212CBD62C50FD7C007A212E /* DishDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -127,12 +136,15 @@
 		1242B9F12C4FB8BC00E14685 /* Meta-IOS-Capstone */ = {
 			isa = PBXGroup;
 			children = (
+				1212CBCF2C50F3EF007A212E /* Dish+CoreDataClass.swift */,
+				1212CBD02C50F3EF007A212E /* Dish+CoreDataProperties.swift */,
 				1212CBA02C501F79007A212E /* Models */,
 				1212CB972C4FFB5A007A212E /* Views */,
 				1242B9F22C4FB8BC00E14685 /* Meta_IOS_CapstoneApp.swift */,
 				1242B9F42C4FB8BC00E14685 /* ContentView.swift */,
 				1242B9F62C4FB8BE00E14685 /* Assets.xcassets */,
 				1242B9FB2C4FB8BE00E14685 /* Persistence.swift */,
+				1212CBD32C50F60F007A212E /* FetchedObjects.swift */,
 				1242B9FD2C4FB8BE00E14685 /* Meta_IOS_Capstone.xcdatamodeld */,
 				1242B9F82C4FB8BE00E14685 /* Preview Content */,
 			);
@@ -296,10 +308,14 @@
 			files = (
 				1212CB9D2C501567007A212E /* MenuView.swift in Sources */,
 				1242B9FC2C4FB8BE00E14685 /* Persistence.swift in Sources */,
+				1212CBD12C50F3EF007A212E /* Dish+CoreDataClass.swift in Sources */,
+				1212CBD22C50F3EF007A212E /* Dish+CoreDataProperties.swift in Sources */,
 				1242B9F52C4FB8BC00E14685 /* ContentView.swift in Sources */,
 				1212CB9F2C5018AE007A212E /* UserView.swift in Sources */,
 				1242B9F32C4FB8BC00E14685 /* Meta_IOS_CapstoneApp.swift in Sources */,
 				1212CB9B2C5014CB007A212E /* HomeView.swift in Sources */,
+				1212CBD42C50F60F007A212E /* FetchedObjects.swift in Sources */,
+				1212CBD72C50FD7C007A212E /* DishDetailView.swift in Sources */,
 				1212CBA22C501F8D007A212E /* Menu.swift in Sources */,
 				1212CB992C4FFB6E007A212E /* OnboardingView.swift in Sources */,
 				1242B9FF2C4FB8BE00E14685 /* Meta_IOS_Capstone.xcdatamodeld in Sources */,
