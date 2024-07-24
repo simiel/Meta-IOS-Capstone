@@ -17,6 +17,8 @@ struct Menu: View {
         sortDescriptors: [NSSortDescriptor(keyPath: \Dish.title, ascending: true)]
     ) var dishes: FetchedResults<Dish>
     
+    @State private var searchText: String = ""
+    
     
     var body: some View {
         NavigationView {
@@ -34,12 +36,17 @@ struct Menu: View {
                     .font(.subheadline)
                     .padding()
                 
+                TextField("Search menu", text: $searchText)
+                        .padding()
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
                 
                 if dishes.isEmpty {
                     Text("Loading menu...")
                 } else {
                     List {
-                        ForEach(dishes) { dish in
+                        ForEach(dishes.filter { dish in
+                                    searchText.isEmpty || (dish.title?.localizedCaseInsensitiveContains(searchText) ?? false)
+                                }) { dish in
                             NavigationLink(destination: DishDetailView(dish: dish)) {
                                 HStack {
                                     Text("\(dish.title ?? "") - \(dish.price ?? "")")
@@ -111,6 +118,11 @@ struct Menu: View {
             print("Failed to save new records: \(error)")
         }
     }
+    
+    private func buildSortDescriptors() -> [NSSortDescriptor] {
+        return [NSSortDescriptor(key: "title", ascending: true, selector: #selector(NSString.localizedStandardCompare))]
+    }
+
 }
 
 struct Menu_Previews: PreviewProvider {
